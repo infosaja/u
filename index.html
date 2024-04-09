@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Range Selector</title>
+<link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Range Selector</h1>
+
+  <div class="input-group">
+    <label for="media">Photo / Video Ad:</label>
+    <input type="file" id="media" name="media" accept="image/*, video/*">
+  </div>
+
+  <div class="input-group">
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4"></textarea>
+  </div>
+
+  <div class="input-group">
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url">
+  </div>
+
+  <div class="input-group">
+    <label for="country">Select Country:</label>
+    <select id="country" name="country">
+      <option value="id">Indonesia</option>
+      <option value="my">Malaysia</option>
+    </select>
+  </div>
+
+  <div class="input-group" id="island-group" style="display: none;">
+    <label for="island">Select Island:</label>
+    <select id="island" name="island">
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label for="time">Select Time:</label>
+    <select id="time" name="time">
+      <option value="day">Day</option>
+      <option value="week">Week</option>
+      <option value="month">Month</option>
+    </select>
+  </div>
+
+  <div class="range-selector">
+    <input type="range" min="1" max="7" value="1" id="rangeSlider">
+    <div class="range-labels">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+    </div>
+    <div class="range-prices">
+      <span class="idr show">IDR 30,000</span>
+      <span class="idr">IDR 60,000</span>
+      <span class="idr">IDR 70,000</span>
+      <span class="idr">IDR 90,000</span>
+      <span class="idr">IDR 100,000</span>
+      <span class="idr">IDR 110,000</span>
+      <span class="idr">IDR 120,000</span>
+    </div>
+  </div>
+</div>
+
+<script src="rxl.js"></script>
+
+</body>
+</html>
